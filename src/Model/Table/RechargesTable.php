@@ -25,7 +25,7 @@ class RechargesTable extends Table {
         if ($this->save($recharge)) {
 
             // Create a Transaction
-            $transaction = $this->Transactions->createTransaction($recharge, 'request');
+            $transaction = $this->Transactions->createTransaction($recharge, 'recharge');
             $updateRechargePending = $this->get($recharge->id);
             
             if($transaction != null) {
