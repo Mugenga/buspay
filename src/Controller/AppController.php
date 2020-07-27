@@ -52,10 +52,6 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
 
-
-        $this->loadModel('Members');
-        $this->loadModel('Operations');
-        $this->loadModel('Requests');
         $this->loadModel('Transactions');
     }
 
