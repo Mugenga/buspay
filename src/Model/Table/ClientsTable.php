@@ -15,7 +15,6 @@ class ClientsTable extends Table {
         //Close the request.
         $postData['first_name'] = $data->first_name;
         $postData['last_name'] = $data->last_name;
-        $postData['email'] = $data->email;
         $postData['phone_number'] = $data->phone_number;
   
         $client = $this->newEntity($postData);
